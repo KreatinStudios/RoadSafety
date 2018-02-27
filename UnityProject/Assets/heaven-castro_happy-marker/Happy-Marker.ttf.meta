@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a43f8f3ec33354c28bc912f0fe26ac19
+timeCreated: 1519745313
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Happy Marker
+  fontNames:
+  - Happy Marker
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
