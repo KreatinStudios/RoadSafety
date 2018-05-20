@@ -15,8 +15,11 @@ public class lookat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		LookTo (myTarget);
-		gameObject.transform.position = new Vector3(hoverTarget.position.x,y,hoverTarget.position.z);
+		if(myTarget != null)
+			LookTo (myTarget);
+
+		if(hoverTarget != null)
+			gameObject.transform.position = new Vector3(hoverTarget.position.x,y,hoverTarget.position.z);
 	}
 
 

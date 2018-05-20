@@ -12,13 +12,16 @@ public class QuizItem : MonoBehaviour {
 
 		public int rightAnswerIndex;
 		public Transform renderCamPos;
+
+		public bool answered = false;
+		public GameObject hint;
 	}
 
 	public QuizItemm question;
 
 	// Use this for initialization
 	void Start () {
-		
+		QuizManager.instance.questions.Add(this);
 	}
 	
 	// Update is called once per frame
