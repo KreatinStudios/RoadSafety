@@ -42,5 +42,8 @@ EditorBuildSettings:
     path: Assets/testler.unity
     guid: 559a3f0d6ad5f408b80c735ed33ff0c3
   - enabled: 1
-    path: Assets/unicefAR.unity
+    path: Assets/Scenes/MainLevel.unity
+    guid: f0267cef26aaa4abe8ffbd0ddb57ea4e
+  - enabled: 1
+    path: Assets/Scenes/unicefAR.unity
     guid: 13755b1ea443440a9835682dfa18ae27

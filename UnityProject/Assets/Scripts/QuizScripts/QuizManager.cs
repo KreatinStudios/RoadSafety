@@ -33,6 +33,8 @@ public class QuizManager : MonoBehaviour {
 	public GameObject endGamePanel;
 	public Text endGameResultText;
 
+	public int rightAnswerPoint = 25;
+
 	void InitQuiz()
 	{
 		answeredQuestionCount = 0;
@@ -62,7 +64,7 @@ public class QuizManager : MonoBehaviour {
 		{
 			resultText.text = "CORRECT!";
 			rightAnsweredCount++;
-			points = rightAnsweredCount * 20;
+			points = rightAnsweredCount * rightAnswerPoint;
 		}
 		else
 		{
@@ -71,7 +73,7 @@ public class QuizManager : MonoBehaviour {
 
 		question.question.answered = true;
 		answeredQuestionCount++;
-		endGameResultText.text = "Your Point: " + rightAnsweredCount*20 + " / " + questions.Count*20;
+		endGameResultText.text = "Your Point: " + rightAnsweredCount*rightAnswerPoint + " / " + questions.Count*rightAnswerPoint;
 		SetQuestionAnsweredText(answeredQuestionCount, questions.Count);
 
 		if(answeredQuestionCount >= questions.Count)
